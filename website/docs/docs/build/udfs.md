@@ -44,7 +44,7 @@ Refer to [Function properties](/reference/function-properties) or [Function conf
 :::important UDF support
 Additional languages (for example, Java, JavaScript, Scala) aren't currently supported when developing UDFs.
 
-See the [Limitations](#limitations) section below for the full list of currently supported UDF capabilities.
+Refer to the [Limitations](#limitations) section below for the full list of currently supported UDF capabilities.
 :::
 
 ## Defining UDFs in dbt
@@ -93,6 +93,10 @@ Follow these steps to define UDFs in dbt:
     **Note**: You can specify configs in a config block in the SQL file or in the corresponding properties YAML file in step 2. 
 
 2. Specify the function name and define the config, properties, return type, and optional arguments in a corresponding properties YAML file. For example:
+
+    :::note Function configs are set per function
+    In a properties `.yml` file, you configure each function within its own `config` block under `functions:`. If you define multiple functions, repeat the relevant `config` values for each function (dbt doesn't support a shared `config` block at the `functions:` level). If several functions share the same config values, you can use YAML anchors and aliases to reduce duplication.
+    :::
 
     <Tabs>
     <TabItem value="SQL">
@@ -328,7 +332,7 @@ Follow these steps to define UDFs in dbt:
 
 When using [`--defer`](/reference/node-selection/defer), `function()` resolves to the UDF definition from the state manifest (for example, a production environment) if the function is not selected or not yet built in your target environment. This allows models that depend on UDFs to run successfully in [continuous integration](/docs/deploy/continuous-integration) and development workflows.
 
-5. Run `dbt compile` to see how the UDF is referenced. In the following example, the `{{ function('is_positive_int') }}` is replaced by the UDF name `udf_db.udf_schema.is_positive_int`.
+5. Run `dbt compile` to review how the UDF is referenced. In the following example, the `{{ function('is_positive_int') }}` is replaced by the UDF name `udf_db.udf_schema.is_positive_int`.
 
     <File name="models/my_model.sql">
 
@@ -385,12 +389,12 @@ Use the [`list` command](/reference/commands/list#listing-functions) to list UDF
 
 Use the [`build` command](/reference/commands/build#functions) to select UDFs when building a project: `dbt build --select "resource_type:function"`.
 
-For more information about selecting UDFs, see the examples in [Node selector methods](/reference/node-selection/methods#file).
+For more information about selecting UDFs, refer to the examples in [Node selector methods](/reference/node-selection/methods#file).
 
 ## Limitations
 - Creating UDFs in other languages (for example, Java, JavaScript, or Scala) is not yet supported. 
 - Python UDFs are supported in Snowflake and BigQuery only (when using <Constant name="core" /> or <Constant name="fusion" />). Other warehouses aren't yet supported for Python UDFs.
-- Only <Term id="scalar">scalar</Term> and <Term id="aggregate">aggregate</Term> functions are currently supported. For more information, see [Supported function types](/reference/resource-configs/type#supported-function-types).
+- Only <Term id="scalar">scalar</Term> and <Term id="aggregate">aggregate</Term> functions are currently supported. For more information, refer to [Supported function types](/reference/resource-configs/type#supported-function-types).
 
 ## Related FAQs
 
