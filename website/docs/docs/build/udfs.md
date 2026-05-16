@@ -95,13 +95,13 @@ Follow these steps to define UDFs in dbt:
 2. Specify the function name and define the config, properties, return type, and optional arguments in a corresponding properties YAML file. For example:
 
     :::note Function configs are set per function
-    In a properties YAML file (for example, `functions/schema.yml`), you configure each function within its own `config` block under `functions:`. If you define multiple functions, repeat the relevant `config` values for each function (dbt doesn't support a shared `config` block at the `functions:` level). If several functions share the same config values, you can use YAML anchors and aliases to reduce duplication.
+    In a properties YAML file (for example, `functions/is_positive_int.yml`), you configure each function within its own `config` block under `functions:`. If you define multiple functions, repeat the relevant `config` values for each function (dbt doesn't support a shared `config` block at the `functions:` level). If several functions share the same config values, you can use YAML anchors and aliases to reduce duplication.
     :::
 
     <Tabs>
     <TabItem value="SQL">
 
-    <File name='functions/schema.yml'>
+    <File name='functions/is_positive_int.yml'>
 
     ```yml
     functions:
@@ -163,28 +163,28 @@ Follow these steps to define UDFs in dbt:
     
     The following example shows a Python UDF with the required configs (`runtime_version`, `entry_point`), the optional `packages` config, and other common configs:
 
-    <File name='functions/schema.yml'>
+    <File name='functions/is_positive_int.yml'>
 
     ```yml
-      functions:
-        - name: is_positive_int # required
-          description: My UDF that returns 1 if a string represents a naked positive integer (like "10", "+8" is not allowed). # optional
-          config:
-            runtime_version: "3.11"   # required
-            entry_point: main         # required
-            packages:                 # optional, Python UDFs only
-              - numpy
-              - pandas==1.5.0
-            schema: udf_schema
-            database: udf_db
-            volatility: deterministic  
-          arguments:                   # optional
-            - name: a_string           # required if arguments is specified
-              data_type: string        # required if arguments is specified
-              description: The string that I want to check if it's representing a positive integer (like "10")
-              default_value: "'1'"     # optional, available in Snowflake and Postgres
-          returns:                     # required
-            data_type: integer         # required
+    functions:
+      - name: is_positive_int # required
+        description: My UDF that returns 1 if a string represents a naked positive integer (like "10", "+8" is not allowed). # optional
+        config:
+          runtime_version: "3.11"   # required
+          entry_point: main         # required
+          packages:                 # optional, Python UDFs only
+            - numpy
+            - pandas==1.5.0
+          schema: udf_schema
+          database: udf_db
+          volatility: deterministic  
+        arguments:                   # optional
+          - name: a_string           # required if arguments is specified
+            data_type: string        # required if arguments is specified
+            description: The string that I want to check if it's representing a positive integer (like "10")
+            default_value: "'1'"     # optional, available in Snowflake and Postgres
+        returns:                     # required
+          data_type: integer         # required
     ```
     </File>
     </TabItem>
@@ -208,7 +208,7 @@ Follow these steps to define UDFs in dbt:
     dbt build --select is_positive_int
     ```
 
-     When you run `dbt build`, both the `functions/schema.yml` file and the corresponding SQL or Python file (for example, `functions/is_positive_int.sql` or `functions/is_positive_int.py`) work together to generate the `CREATE FUNCTION` statement.
+     When you run `dbt build`, both the properties YAML file (for example, `functions/is_positive_int.yml`) and the corresponding SQL or Python file (for example, `functions/is_positive_int.sql` or `functions/is_positive_int.py`) work together to generate the `CREATE FUNCTION` statement.
      
      The rendered `CREATE FUNCTION` statement depends on which adapter you're using. For example:
 
@@ -347,7 +347,7 @@ Follow these steps to define UDFs in dbt:
     In your DAG, a UDF node is created from the SQL/Python and YAML definitions, and there will be a dependency between `is_positive_int` → `my_model`.
    <Lightbox src="/img/docs/building-a-dbt-project/UDF-DAG.png" width="85%" title="The DAG for the UDF node" />
 
-After defining a UDF, if you update the SQL/Python file that contains its function body (`is_positive_int.sql` or `is_positive_int.py` in this example), its configurations, or its properties defined in the `.yml` file (such as `arguments` or `returns`), your changes will be applied to the UDF in the warehouse next time you `build`. dbt detects all of these changes when using [`state:modified`](/reference/node-selection/methods#state).
+After defining a UDF, if you update the SQL/Python file that contains its function body (`functions/is_positive_int.sql` or `functions/is_positive_int.py` in this example), its configurations, or its properties defined in the properties YAML file (`functions/is_positive_int.yml`, such as `arguments` or `returns`), your changes will be applied to the UDF in the warehouse next time you `build`. dbt detects all of these changes when using [`state:modified`](/reference/node-selection/methods#state).
 
 
 ## Using UDFs in unit tests
