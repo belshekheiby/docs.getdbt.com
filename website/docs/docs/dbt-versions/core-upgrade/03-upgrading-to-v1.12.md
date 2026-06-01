@@ -62,6 +62,10 @@ For migration guidance and a comparison between the latest spec and the legacy s
 
 Starting in <Constant name="core" /> v1.12, dbt writes an `osi_document.json` file to your `target/` directory alongside `semantic_manifest.json` at parse time. This artifact provides an Open Semantic Interchange (OSI) representation of your project's <Constant name="semantic_layer" />. For more information, refer to [Semantic manifest](/reference/artifacts/sl-manifest#osi-document).
 
+### New Iceberg `catalogs` spec
+
+TODO
+
 ### `selector` method for named YAML selectors <Lifecycle status="beta" />
 
 You can reference a named selector from `selectors.yml` inside `--select` or `--exclude` using the [`selector` method](/reference/node-selection/methods#selector) (for example, `selector:my_selector`). This makes it easier to compose reusable YAML selectors with other [selection methods](/reference/node-selection/methods), [graph operators](/reference/node-selection/graph-operators), and [set operators](/reference/node-selection/set-operators) on the command line without duplicating logic.
