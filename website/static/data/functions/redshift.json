@@ -1,0 +1,1536 @@
+{
+  "_meta": {
+    "platform": "redshift",
+    "platform_name": "Amazon Redshift",
+    "fetched_at": "2026-06-09T12:27:46.726Z",
+    "count": 218
+  },
+  "functions": [
+    {
+      "name": "ANY_VALUE",
+      "category": "Aggregate",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_ANY_VALUE.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "APPROXIMATE PERCENTILE_DISC",
+      "category": "Aggregate",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_APPROXIMATE_PERCENTILE_DISC.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "AVG",
+      "category": "Aggregate",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_AVG.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "COUNT",
+      "category": "Aggregate",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_COUNT.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "LISTAGG",
+      "category": "Aggregate",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_LISTAGG.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "MAX",
+      "category": "Aggregate",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_MAX.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "MEDIAN",
+      "category": "Aggregate",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_MEDIAN.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "MIN",
+      "category": "Aggregate",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_MIN.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "PERCENTILE_CONT",
+      "category": "Aggregate",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_PERCENTILE_CONT.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "STDDEV_POP",
+      "category": "Aggregate",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_STDDEV_functions.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "VAR_POP",
+      "category": "Aggregate",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_VARIANCE_functions.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "ARRAY",
+      "category": "Array",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_array.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "ARRAY_CONCAT",
+      "category": "Array",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_array_concat.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "SUBARRAY",
+      "category": "Array",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_subarray.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "BIT_AND",
+      "category": "Bit-wise aggregate",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_BIT_AND.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "BIT_OR",
+      "category": "Bit-wise aggregate",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_BIT_OR.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "BOOL_AND",
+      "category": "Bit-wise aggregate",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_BOOL_AND.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "BOOL_OR",
+      "category": "Bit-wise aggregate",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_BOOL_OR.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "CASE CONDITIONAL EXPRESSION",
+      "category": "Conditional expressions",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_CASE_function.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "COALESCE",
+      "category": "Conditional expressions",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_NVL_function.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "DECODE",
+      "category": "Conditional expressions",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_DECODE_expression.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "GREATEST",
+      "category": "Conditional expressions",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_GREATEST_LEAST.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "LEAST",
+      "category": "Conditional expressions",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_GREATEST_LEAST.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "NULLIF",
+      "category": "Conditional expressions",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_NULLIF_function.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "NVL",
+      "category": "Conditional expressions",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_NVL_function.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "NVL2",
+      "category": "Conditional expressions",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_NVL2.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "CAST",
+      "category": "Data type formatting",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_CAST_function.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "CONVERT",
+      "category": "Data type formatting",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_CONVERT_function.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "DATETIME FORMAT STRINGS",
+      "category": "Data type formatting",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_FORMAT_strings.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "NUMERIC FORMAT STRINGS",
+      "category": "Data type formatting",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_Numeric_formating.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "TERADATA-STYLE FORMATTING CHARACTERS FOR NUMERIC DATA",
+      "category": "Data type formatting",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_Numeric-format-teradata.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "TEXT_TO_INT_ALT",
+      "category": "Data type formatting",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_TEXT_TO_INT_ALT.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "TEXT_TO_NUMERIC_ALT",
+      "category": "Data type formatting",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_TEXT_TO_NUMERIC_ALT.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "TO_CHAR",
+      "category": "Data type formatting",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_TO_CHAR.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "TO_DATE",
+      "category": "Data type formatting",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_TO_DATE_function.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "TO_NUMBER",
+      "category": "Data type formatting",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_TO_NUMBER.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "TRY_CAST",
+      "category": "Data type formatting",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_TRY_CAST.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "+ (CONCATENATION) OPERATOR",
+      "category": "Date and time",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_DATE-CONCATENATE_function.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "ADD_MONTHS",
+      "category": "Date and time",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_ADD_MONTHS.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "AT TIME ZONE",
+      "category": "Date and time",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_AT_TIME_ZONE.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "CURRENT_DATE",
+      "category": "Date and time",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_CURRENT_DATE_function.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "DATE PARTS FOR DATE OR TIMESTAMP",
+      "category": "Date and time",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_Dateparts_for_datetime_functions.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "DATE_CMP",
+      "category": "Date and time",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_DATE_CMP.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "DATE_CMP_TIMESTAMP",
+      "category": "Date and time",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_DATE_CMP_TIMESTAMP.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "DATE_CMP_TIMESTAMPTZ",
+      "category": "Date and time",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_DATE_CMP_TIMESTAMPTZ.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "DATE_PART",
+      "category": "Date and time",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_DATE_PART_function.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "DATE_PART_YEAR",
+      "category": "Date and time",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_DATE_PART_YEAR.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "DATE_TRUNC",
+      "category": "Date and time",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_DATE_TRUNC.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "DATEADD",
+      "category": "Date and time",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_DATEADD_function.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "DATEDIFF",
+      "category": "Date and time",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_DATEDIFF_function.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "EXTRACT",
+      "category": "Date and time",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_EXTRACT_function.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "GETDATE",
+      "category": "Date and time",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_GETDATE.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "INTERVAL_CMP",
+      "category": "Date and time",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_INTERVAL_CMP.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "LAST_DAY",
+      "category": "Date and time",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_LAST_DAY.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "MONTHS_BETWEEN",
+      "category": "Date and time",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_MONTHS_BETWEEN_function.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "NEXT_DAY",
+      "category": "Date and time",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_NEXT_DAY.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "SYSDATE",
+      "category": "Date and time",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_SYSDATE.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "TIMEOFDAY",
+      "category": "Date and time",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_TIMEOFDAY_function.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "TIMESTAMP_CMP",
+      "category": "Date and time",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_TIMESTAMP_CMP.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "TIMESTAMP_CMP_DATE",
+      "category": "Date and time",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_TIMESTAMP_CMP_DATE.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "TIMESTAMP_CMP_TIMESTAMPTZ",
+      "category": "Date and time",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_TIMESTAMP_CMP_TIMESTAMPTZ.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "TIMESTAMPTZ_CMP",
+      "category": "Date and time",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_TIMESTAMPTZ_CMP.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "TIMESTAMPTZ_CMP_DATE",
+      "category": "Date and time",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_TIMESTAMPTZ_CMP_DATE.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "TIMESTAMPTZ_CMP_TIMESTAMP",
+      "category": "Date and time",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_TIMESTAMPTZ_CMP_TIMESTAMP.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "TIMEZONE",
+      "category": "Date and time",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_TIMEZONE.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "TO_TIMESTAMP",
+      "category": "Date and time",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_TO_TIMESTAMP.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "CHECKSUM",
+      "category": "Hash",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_CHECKSUM.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "FARMFINGERPRINT64",
+      "category": "Hash",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_FARMFINGERPRINT64.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "FNV_HASH",
+      "category": "Hash",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_FNV_HASH.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "MD5",
+      "category": "Hash",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_MD5.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "HLL",
+      "category": "HyperLogLog",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_HLL_function.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "HLL_CARDINALITY",
+      "category": "HyperLogLog",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_HLL_CARDINALITY.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "HLL_COMBINE",
+      "category": "HyperLogLog",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_HLL_COMBINE.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "HLL_COMBINE_SKETCHES",
+      "category": "HyperLogLog",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_HLL_COMBINE_SKETCHES.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "HLL_CREATE_SKETCH",
+      "category": "HyperLogLog",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_HLL_CREATE_SKETCH.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "EXPLAIN_MODEL",
+      "category": "Machine learning",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_explain_model_function.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "ABS",
+      "category": "Math",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_ABS.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "ACOS",
+      "category": "Math",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_ACOS.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "ASIN",
+      "category": "Math",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_ASIN.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "ATAN",
+      "category": "Math",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_ATAN.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "ATAN2",
+      "category": "Math",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_ATAN2.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "CBRT",
+      "category": "Math",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_CBRT.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "CEILING (OR CEIL)",
+      "category": "Math",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_CEILING_FLOOR.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "COS",
+      "category": "Math",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_COS.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "COT",
+      "category": "Math",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_COT.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "DEGREES",
+      "category": "Math",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_DEGREES.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "DEXP",
+      "category": "Math",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_DEXP.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "DLOG1",
+      "category": "Math",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_DLOG1.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "DLOG10",
+      "category": "Math",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_DLOG10.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "EXP",
+      "category": "Math",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_EXP.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "FLOOR",
+      "category": "Math",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_FLOOR.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "LN",
+      "category": "Math",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_LN.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "LOG",
+      "category": "Math",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_LOG.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "MATHEMATICAL OPERATOR SYMBOLS",
+      "category": "Math",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_OPERATOR_SYMBOLS.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "MOD",
+      "category": "Math",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_MOD.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "PI",
+      "category": "Math",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_PI.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "POWER",
+      "category": "Math",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_POWER.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "RADIANS",
+      "category": "Math",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_RADIANS.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "RANDOM",
+      "category": "Math",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_RANDOM.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "ROUND",
+      "category": "Math",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_ROUND.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "SIGN",
+      "category": "Math",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_SIGN.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "SIN",
+      "category": "Math",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_SIN.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "SQRT",
+      "category": "Math",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_SQRT.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "TAN",
+      "category": "Math",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_TAN.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "TRUNC",
+      "category": "Math",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_TRUNC.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "LOWER_ATTRIBUTE_NAMES",
+      "category": "Object",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_lower_attribute_names.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "OBJECT",
+      "category": "Object",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_object_function.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "OBJECT_TRANSFORM",
+      "category": "Object",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_object_transform_function.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "UPPER_ATTRIBUTE_NAMES",
+      "category": "Object",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_upper_attribute_names.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "|| (CONCATENATION) OPERATOR",
+      "category": "String",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_concat_op.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "ASCII",
+      "category": "String",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_ASCII.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "BPCHARCMP",
+      "category": "String",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_BPCHARCMP.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "BTRIM",
+      "category": "String",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_BTRIM.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "BTTEXT_PATTERN_CMP",
+      "category": "String",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_BTTEXT_PATTERN_CMP.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "CHAR_LENGTH",
+      "category": "String",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_CHAR_LENGTH.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "CHARACTER_LENGTH",
+      "category": "String",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_CHARACTER_LENGTH.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "CHARINDEX",
+      "category": "String",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_CHARINDEX.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "CHR",
+      "category": "String",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_CHR.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "COLLATE",
+      "category": "String",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_COLLATE.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "INITCAP",
+      "category": "String",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_INITCAP.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "LEFT",
+      "category": "String",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_LEFT.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "LOWER",
+      "category": "String",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_LOWER.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "LPAD",
+      "category": "String",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_LPAD.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "LTRIM",
+      "category": "String",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_LTRIM.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "POSITION",
+      "category": "String",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_POSITION.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "QUOTE_IDENT",
+      "category": "String",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_QUOTE_IDENT.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "QUOTE_LITERAL",
+      "category": "String",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_QUOTE_LITERAL.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "REPEAT",
+      "category": "String",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_REPEAT.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "REPLACE",
+      "category": "String",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_REPLACE.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "REPLICATE",
+      "category": "String",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_REPLICATE.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "REVERSE",
+      "category": "String",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_REVERSE.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "RIGHT",
+      "category": "String",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_LEFT.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "RPAD",
+      "category": "String",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_LPAD.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "RTRIM",
+      "category": "String",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_RTRIM.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "STRPOS",
+      "category": "String",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_STRPOS.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "STRTOL",
+      "category": "String",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_STRTOL.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "TEXTLEN",
+      "category": "String",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_TEXTLEN.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "TRANSLATE",
+      "category": "String",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_TRANSLATE.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "TRIM",
+      "category": "String",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_TRIM.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "UPPER",
+      "category": "String",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_UPPER.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "DECIMAL_PRECISION",
+      "category": "SUPER type information",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_decimal_precision.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "DECIMAL_SCALE",
+      "category": "SUPER type information",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_decimal_scale.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "IS_ARRAY",
+      "category": "SUPER type information",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_is_array.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "IS_BIGINT",
+      "category": "SUPER type information",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_is_bigint.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "IS_BOOLEAN",
+      "category": "SUPER type information",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_is_boolean.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "IS_CHAR",
+      "category": "SUPER type information",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_is_char.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "IS_DECIMAL",
+      "category": "SUPER type information",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_is_decimal.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "IS_FLOAT",
+      "category": "SUPER type information",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_is_float.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "IS_INTEGER",
+      "category": "SUPER type information",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_is_integer.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "IS_OBJECT",
+      "category": "SUPER type information",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_is_object.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "IS_SCALAR",
+      "category": "SUPER type information",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_is_scalar.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "IS_SMALLINT",
+      "category": "SUPER type information",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_is_smallint.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "IS_VARCHAR",
+      "category": "SUPER type information",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_is_varchar.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "JSON_SIZE",
+      "category": "SUPER type information",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_json_size.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "JSON_TYPEOF",
+      "category": "SUPER type information",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_json_typeof.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "SIZE",
+      "category": "SUPER type information",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_SIZE.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "CHANGE_QUERY_PRIORITY",
+      "category": "System administration",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_CHANGE_QUERY_PRIORITY.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "CHANGE_SESSION_PRIORITY",
+      "category": "System administration",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_CHANGE_SESSION_PRIORITY.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "CHANGE_USER_PRIORITY",
+      "category": "System administration",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_CHANGE_USER_PRIORITY.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "CURRENT_SETTING",
+      "category": "System administration",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_CURRENT_SETTING.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "REBOOT_CLUSTER",
+      "category": "System administration",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_REBOOT_CLUSTER.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "SET_CONFIG",
+      "category": "System administration",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_SET_CONFIG.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "CURRENT_AWS_ACCOUNT",
+      "category": "System information",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_CURRENT_AWS_ACCOUNT.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "CURRENT_DATABASE",
+      "category": "System information",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_CURRENT_DATABASE.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "CURRENT_NAMESPACE",
+      "category": "System information",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_CURRENT_NAMESPACE.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "CURRENT_SCHEMA",
+      "category": "System information",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_CURRENT_SCHEMA.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "CURRENT_SCHEMAS",
+      "category": "System information",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_CURRENT_SCHEMAS.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "CURRENT_SESSION_ARN",
+      "category": "System information",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_CURRENT_SESSION_ARN.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "CURRENT_USER",
+      "category": "System information",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_CURRENT_USER.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "CURRENT_USER_ID",
+      "category": "System information",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_CURRENT_USER_ID.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "DB_COLLATION",
+      "category": "System information",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_DB_COLLATION.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "DEFAULT_IAM_ROLE",
+      "category": "System information",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_DEFAULT_IAM_ROLE.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "HAS_ASSUMEROLE_PRIVILEGE",
+      "category": "System information",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_HAS_ASSUMEROLE_PRIVILEGE.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "HAS_DATABASE_PRIVILEGE",
+      "category": "System information",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_HAS_DATABASE_PRIVILEGE.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "HAS_SCHEMA_PRIVILEGE",
+      "category": "System information",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_HAS_SCHEMA_PRIVILEGE.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "HAS_TABLE_PRIVILEGE",
+      "category": "System information",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_HAS_TABLE_PRIVILEGE.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "ROLE_IS_MEMBER_OF",
+      "category": "System information",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_ROLE_IS_MEMBER_OF.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "SLICE_NUM",
+      "category": "System information",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_SLICE_NUM.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "USER",
+      "category": "System information",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_USER.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "USER_IS_MEMBER_OF",
+      "category": "System information",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_USER_IS_MEMBER_OF.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "VERSION",
+      "category": "System information",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_VERSION.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "CONCAT",
+      "category": "VARBYTE functions and operators",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_CONCAT.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "FROM_HEX",
+      "category": "VARBYTE functions and operators",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_FROM_HEX.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "FROM_VARBYTE",
+      "category": "VARBYTE functions and operators",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_FROM_VARBYTE.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "GETBIT",
+      "category": "VARBYTE functions and operators",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_GETBIT.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "LEN",
+      "category": "VARBYTE functions and operators",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_LEN.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "LENGTH",
+      "category": "VARBYTE functions and operators",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_LENGTH.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "OCTET_LENGTH",
+      "category": "VARBYTE functions and operators",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_OCTET_LENGTH.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "SUBSTRING",
+      "category": "VARBYTE functions and operators",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_SUBSTRING.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "TO_HEX",
+      "category": "VARBYTE functions and operators",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_TO_HEX.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "TO_VARBYTE",
+      "category": "VARBYTE functions and operators",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_TO_VARBYTE.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "VARBYTE OPERATORS",
+      "category": "VARBYTE functions and operators",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_VARBYTE_OPERATORS.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "AVG WINDOW",
+      "category": "Window",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_WF_AVG.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "COUNT WINDOW",
+      "category": "Window",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_WF_COUNT.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "CUME_DIST WINDOW",
+      "category": "Window",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_WF_CUME_DIST.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "DENSE_RANK WINDOW",
+      "category": "Window",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_WF_DENSE_RANK.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "FIRST_VALUE WINDOW",
+      "category": "Window",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_WF_first_value.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "LAG WINDOW",
+      "category": "Window",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_WF_LAG.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "LAST_VALUE WINDOW",
+      "category": "Window",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_WF_last_value.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "LEAD WINDOW",
+      "category": "Window",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_WF_LEAD.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "LISTAGG WINDOW",
+      "category": "Window",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_WF_LISTAGG.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "MAX WINDOW",
+      "category": "Window",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_WF_MAX.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "MEDIAN WINDOW",
+      "category": "Window",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_WF_MEDIAN.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "MIN WINDOW",
+      "category": "Window",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_WF_MIN.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "NTH_VALUE WINDOW",
+      "category": "Window",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_WF_NTH.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "NTILE WINDOW",
+      "category": "Window",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_WF_NTILE.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "PERCENT_RANK WINDOW",
+      "category": "Window",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_WF_PERCENT_RANK.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "PERCENTILE_CONT WINDOW",
+      "category": "Window",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_WF_PERCENTILE_CONT.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "PERCENTILE_DISC WINDOW",
+      "category": "Window",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_WF_PERCENTILE_DISC.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "RANK WINDOW",
+      "category": "Window",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_WF_RANK.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "RATIO_TO_REPORT WINDOW",
+      "category": "Window",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_WF_RATIO_TO_REPORT.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "ROW_NUMBER WINDOW",
+      "category": "Window",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_WF_ROW_NUMBER.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "STDDEV_POP WINDOW",
+      "category": "Window",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_WF_STDDEV.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "STDDEV_SAMP",
+      "category": "Window",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_WF_STDDEV.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "SUM",
+      "category": "Window",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_WF_SUM.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "SUM WINDOW",
+      "category": "Window",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_WF_SUM.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "VAR_POP WINDOW",
+      "category": "Window",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_WF_VARIANCE.html",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "VAR_SAMP",
+      "category": "Window",
+      "docs_url": "https://docs.aws.amazon.com/redshift/latest/dg/r_WF_VARIANCE.html",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    }
+  ]
+}
