@@ -2,8 +2,8 @@
   "_meta": {
     "platform": "snowflake",
     "platform_name": "Snowflake",
-    "fetched_at": "2026-04-22T23:56:51.518Z",
-    "count": 935
+    "fetched_at": "2026-06-09T12:18:29.267Z",
+    "count": 941
   },
   "functions": [
     {
@@ -154,6 +154,27 @@
       "fusion_typecheck": true
     },
     {
+      "name": "BITMAP_ABSOLUTE_POSITION",
+      "category": "Aggregate",
+      "docs_url": "https://docs.snowflake.com/en/sql-reference/functions/bitmap_absolute_position",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "BITMAP_AND",
+      "category": "Aggregate",
+      "docs_url": "https://docs.snowflake.com/en/sql-reference/functions/bitmap_and",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
+      "name": "BITMAP_AND_AGG",
+      "category": "Aggregate",
+      "docs_url": "https://docs.snowflake.com/en/sql-reference/functions/bitmap_and_agg",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
       "name": "BITMAP_BIT_POSITION",
       "category": "Aggregate",
       "docs_url": "https://docs.snowflake.com/en/sql-reference/functions/bitmap_bit_position",
@@ -182,9 +203,23 @@
       "fusion_typecheck": true
     },
     {
+      "name": "BITMAP_OR",
+      "category": "Aggregate",
+      "docs_url": "https://docs.snowflake.com/en/sql-reference/functions/bitmap_or",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
       "name": "BITMAP_OR_AGG",
       "category": "Aggregate",
       "docs_url": "https://docs.snowflake.com/en/sql-reference/functions/bitmap_or_agg",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
+      "name": "BITMAP_TO_ARRAY",
+      "category": "Aggregate",
+      "docs_url": "https://docs.snowflake.com/en/sql-reference/functions/bitmap_to_array",
       "preview_status": "GA",
       "fusion_typecheck": true
     },
@@ -3514,7 +3549,7 @@
       "fusion_typecheck": true
     },
     {
-      "name": "AS_<OBJECT_TYPE>",
+      "name": "AS_*<OBJECT_TYPE>*",
       "category": "Semi-structured and structured data",
       "docs_url": "https://docs.snowflake.com/en/sql-reference/functions/as",
       "preview_status": "GA",
@@ -3640,7 +3675,7 @@
       "fusion_typecheck": false
     },
     {
-      "name": "IS_<OBJECT_TYPE>",
+      "name": "IS_*<OBJECT_TYPE>*",
       "category": "Semi-structured and structured data",
       "docs_url": "https://docs.snowflake.com/en/sql-reference/functions/is",
       "preview_status": "GA",
@@ -3990,6 +4025,13 @@
       "fusion_typecheck": true
     },
     {
+      "name": "AI_MULTI_EMBED",
+      "category": "String & binary",
+      "docs_url": "https://docs.snowflake.com/en/sql-reference/functions/ai_multi_embed",
+      "preview_status": "GA",
+      "fusion_typecheck": false
+    },
+    {
       "name": "AI_PARSE_DOCUMENT",
       "category": "String & binary",
       "docs_url": "https://docs.snowflake.com/en/sql-reference/functions/ai_parse_document",
@@ -4207,28 +4249,28 @@
       "fusion_typecheck": false
     },
     {
-      "name": "FINETUNE ('CANCEL') (SNOWFLAKE.CORTEX)",
+      "name": "FINETUNE (‘CANCEL’) (SNOWFLAKE.CORTEX)",
       "category": "String & binary",
       "docs_url": "https://docs.snowflake.com/en/sql-reference/functions/finetune-cancel",
       "preview_status": "GA",
       "fusion_typecheck": false
     },
     {
-      "name": "FINETUNE ('CREATE') (SNOWFLAKE.CORTEX)",
+      "name": "FINETUNE (‘CREATE’) (SNOWFLAKE.CORTEX)",
       "category": "String & binary",
       "docs_url": "https://docs.snowflake.com/en/sql-reference/functions/finetune-create",
       "preview_status": "GA",
       "fusion_typecheck": false
     },
     {
-      "name": "FINETUNE ('DESCRIBE') (SNOWFLAKE.CORTEX)",
+      "name": "FINETUNE (‘DESCRIBE’) (SNOWFLAKE.CORTEX)",
       "category": "String & binary",
       "docs_url": "https://docs.snowflake.com/en/sql-reference/functions/finetune-describe",
       "preview_status": "GA",
       "fusion_typecheck": false
     },
     {
-      "name": "FINETUNE ('SHOW') (SNOWFLAKE.CORTEX)",
+      "name": "FINETUNE (‘SHOW’) (SNOWFLAKE.CORTEX)",
       "category": "String & binary",
       "docs_url": "https://docs.snowflake.com/en/sql-reference/functions/finetune-show",
       "preview_status": "GA",
@@ -4456,7 +4498,7 @@
       "category": "String & binary",
       "docs_url": "https://docs.snowflake.com/en/sql-reference/functions/search",
       "preview_status": "GA",
-      "fusion_typecheck": false
+      "fusion_typecheck": true
     },
     {
       "name": "SEARCH_IP",
@@ -5201,6 +5243,13 @@
       "fusion_typecheck": false
     },
     {
+      "name": "SYSTEM$EVALUATE_DATA_QUALITY_EXPECTATIONS_PERSIST_RESULT",
+      "category": "System",
+      "docs_url": "https://docs.snowflake.com/en/sql-reference/functions/system_evaluate_data_quality_expectations_persist_result",
+      "preview_status": "GA",
+      "fusion_typecheck": true
+    },
+    {
       "name": "SYSTEM$EXPLAIN_JSON_TO_TEXT",
       "category": "System",
       "docs_url": "https://docs.snowflake.com/en/sql-reference/functions/system_explain_json_to_text",
@@ -5866,13 +5915,6 @@
       "fusion_typecheck": false
     },
     {
-      "name": "SYSTEM$SAP_BDC_LIST_SHARES",
-      "category": "System",
-      "docs_url": "https://docs.snowflake.com/en/sql-reference/functions/system_sap_bdc_list_shares",
-      "preview_status": "GA",
-      "fusion_typecheck": false
-    },
-    {
       "name": "SYSTEM$SCHEDULE_ASYNC_REPLICATION_GROUP_REFRESH",
       "category": "System",
       "docs_url": "https://docs.snowflake.com/en/sql-reference/functions/system_schedule_async_replication_group_refresh",
@@ -6346,7 +6388,7 @@
       "category": "Table",
       "docs_url": "https://docs.snowflake.com/en/sql-reference/functions/result_scan",
       "preview_status": "GA",
-      "fusion_typecheck": false
+      "fusion_typecheck": true
     },
     {
       "name": "STORAGE_LIFECYCLE_POLICY_HISTORY",
